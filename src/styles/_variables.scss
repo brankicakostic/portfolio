@@ -1,0 +1,76 @@
+:root {
+  --font-heading: "Space Grotesk", sans-serif;
+  --font-heading: "Space Grotesk", sans-serif;
+  --color-heading: #00ffe0;
+  --hero-bg-color: #031e1a;
+  --h1-color: #00ffe0;
+  --color-background-light: #f0f0f0;
+  --color-background-dark: #1a1a1a;
+  --color-text-light: #1a1a1a;
+  --color-text-dark: #ffffff;
+  --color-primary-light: #007bff;
+  --color-primary-dark: #0056b3;
+  --color-accent: #00bfa6;
+  --color-accent-hover: rgba(0, 191, 166, 0.2);
+  --color-muted: #666666;
+  --color-border: #cccccc;
+  --color-background-light: #f0f0f0;
+}
+
+/* Light Theme */
+[data-theme="light"] {
+  --color-background: var(--color-background-light);
+  --color-text: var(--color-text-light);
+  --color-primary: var(--color-primary-light);
+  --color-heading: var(--h1-color);
+  --color-hero-bg: var(--hero-bg-color);
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --color-background: var(--color-background-dark);
+  --color-text: var(--color-text-dark);
+  --color-primary: var(--color-primary-dark);
+  --color-heading: var(--h1-color);
+  --color-hero-bg: var(--hero-bg-color);
+}
+
+// Font sizes, radius, spacing kao ranije...
+$font-xxl: 5rem;
+$font-xl: 4rem;
+$font-lg: 2rem;
+$font-md: 1.5rem;
+$font-base: 1rem;
+$font-sm: 0.875rem;
+$font-xs: 0.75rem;
+
+$radius-pill: 999px;
+$spacing-md: 16px;
+
+// Color palette
+$color-background: #00221c;
+$color-text-main: #ffffff;
+$color-accent: #00ffe3;
+$color-accent-hover: rgba(28, 211, 190, 0.2);
+$color-muted: #f0f0f0;
+$color-border: #1a1a1a;
+
+// Font sizes
+$font-xxl: 5rem;
+$font-xl: 4rem;
+$font-lg: 2rem;
+$font-md: 1.5rem;
+$font-base: 1rem;
+$font-sm: 0.875rem;
+$font-xs: 0.75rem;
+
+// Border radius
+$radius-pill: 999px;
+$radius-md: 12px;
+$radius-sm: 6px;
+
+// Spacing
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 32px;
+$spacing-xl: 64px;

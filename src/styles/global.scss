@@ -1,0 +1,58 @@
+@use "./variables" as *; // Uvozimo varijable za teme
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: Arial, sans-serif;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+h1 {
+  font-family: var(--font-heading);
+  color: var(--color-heading);
+  font-size: 72px;
+  letter-spacing: -3px;
+  line-height: 1.2;
+  margin: 0 0 20px;
+  transition: all 0.3s ease;
+
+  @media (min-width: 1440px) {
+    font-size: 135px;
+    letter-spacing: -7px;
+    line-height: 180px;
+  }
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+h3 {
+  font-family: var(--font-heading);
+}
+
+button {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  opacity: 0.9;
+}

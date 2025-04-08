@@ -1,0 +1,40 @@
+@use 'sass:map';
+
+// Define light theme map
+$theme-light: (
+  background: #ffffff,
+  text: #000000,
+  accent: #00bfa6,
+  accent-hover: rgba(0, 191, 166, 0.2),
+  muted: #666666,
+  border: #cccccc
+);
+
+// Define dark theme map
+$theme-dark: (
+  background: #00221c,
+  text: #ffffff,
+  accent: #00ffe3,
+  accent-hover: rgba(0, 255, 227, 0.2),
+  muted: #cccccc,
+  border: #1a1a1a
+);
+
+// Mixin to apply theme properties
+@mixin theme($theme) {
+  --color-background: #{map.get($theme, background)};
+  --color-text: #{map.get($theme, text)};
+  --color-accent: #{map.get($theme, accent)};
+  --color-accent-hover: #{map.get($theme, accent-hover)};
+  --color-muted: #{map.get($theme, muted)};
+  --color-border: #{map.get($theme, border)};
+}
+
+// Create actual CSS classes for each theme
+.theme-light {
+  @include theme($theme-light);
+}
+
+.theme-dark {
+  @include theme($theme-dark);
+}
