@@ -1,32 +1,38 @@
 import React from "react";
-import styles from "./Hero.module.scss";
 
 const Hero = () => {
   return (
-    <section className={styles.hero}>
-      <div className={styles.content}>
-        <h1>I’m Brankica</h1>
-        <h1>Frontend developer</h1>
-      </div>
+    <section
+      id="hero"
+      className="relative min-h-screen w-full overflow-hidden flex items-center justify-center text-center text-white px-4"
+    >
+      {/* Full-width pozadinska slika */}
+      {/* <img
+        src="/frontend.jpg"
+        alt="Hero"
+        className="absolute inset-0 w-full h-full object-cover -z-10"
+      />
+ */}
 
-      <div className={styles.bottomLeft}>
-        <h3 className={styles.portfolio}>Portfolio</h3>
-        <p className={styles.meta}>
-          LAST UPDATE ✦ 2025
-          <br />
-          ©BRANKICA KOSTIC
-          <br />
-          SCROLL
+      <div className="max-w-4xl mx-auto z-10">
+        <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
+          Hello, I'm{" "}
+          <span className="text-green-500">&lt;Frontend Developer /&gt;</span>
+        </h1>
+        <p className="text-gray-400 mb-8">
+          I craft clean and interactive user experiences with modern front-end
+          technologies.
         </p>
-      </div>
-
-      <div className={styles.rightButtons}>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </div>
-
-      <div className={styles.tagline}>
-        <h3>Explore a series of my latest pursuits and interests</h3>
+        <div className="mt-6">
+          <a
+            href="/Brankica_Kostic_CV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-6 py-3 border border-green-500 text-green-500 rounded-lg hover:bg-green-500 hover:text-black transition-colors"
+          >
+            View CV
+          </a>
+        </div>
       </div>
     </section>
   );

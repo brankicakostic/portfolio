@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  a {
+    @apply text-green-500 hover:text-white transition-colors;
+  }
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -20,6 +26,30 @@
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@layer utilities {
+  .hexagon {
+    clip-path: polygon(
+      50% 0%,
+      93% 25%,
+      93% 75%,
+      50% 100%,
+      7% 75%,
+      7% 25%
+    );
+  }
+}
+
+.hexagon {
+  clip-path: polygon(
+    50% 0%,
+    93% 25%,
+    93% 75%,
+    50% 100%,
+    7% 75%,
+    7% 25%
+  );
 }
 
 @keyframes logo-spin {

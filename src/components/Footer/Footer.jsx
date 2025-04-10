@@ -1,7 +1,11 @@
 import React from "react";
 
 const Footer = () => {
-  return <footer></footer>;
+  return (
+    <footer className="footer">
+      <p>© 2025 Brankica Kostić</p>
+    </footer>
+  );
 };
 
 export default Footer;

@@ -1,4 +1,39 @@
-@use 'sass:map';
+@use "sass:map";
+
+:root {
+  --font-heading: "Space Grotesk", sans-serif;
+  --color-heading: #00ffe0;
+  --hero-bg-color: #031e1a;
+  --h1-color: #00ffe0;
+  --color-background-light: #f0f0f0;
+  --color-background-dark: #1a1a1a;
+  --color-text-light: #1a1a1a;
+  --color-text-dark: #ffffff;
+  --color-primary-light: #007bff;
+  --color-primary-dark: #0056b3;
+  --color-accent: #00bfa6;
+  --color-accent-hover: rgba(0, 191, 166, 0.2);
+  --color-muted: #666666;
+  --color-border: #cccccc;
+}
+
+/* Light Theme */
+[data-theme="light"] {
+  --color-background: var(--color-background-light);
+  --color-text: var(--color-text-light);
+  --color-primary: var(--color-primary-light);
+  --color-heading: var(--h1-color);
+  --color-hero-bg: var(--hero-bg-color);
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --color-background: var(--color-background-dark);
+  --color-text: var(--color-text-dark);
+  --color-primary: var(--color-primary-dark);
+  --color-heading: var(--h1-color);
+  --color-hero-bg: var(--hero-bg-color);
+}
 
 // Define light theme map
 $theme-light: (
@@ -7,7 +42,7 @@ $theme-light: (
   accent: #00bfa6,
   accent-hover: rgba(0, 191, 166, 0.2),
   muted: #666666,
-  border: #cccccc
+  border: #cccccc,
 );
 
 // Define dark theme map
@@ -17,7 +52,7 @@ $theme-dark: (
   accent: #00ffe3,
   accent-hover: rgba(0, 255, 227, 0.2),
   muted: #cccccc,
-  border: #1a1a1a
+  border: #1a1a1a,
 );
 
 // Mixin to apply theme properties
