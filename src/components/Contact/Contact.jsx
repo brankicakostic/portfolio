@@ -39,11 +39,11 @@ const Contact = () => {
         <div className="flex flex-col gap-4">
           <h3 className="text-green-400 text-xl font-medium">Get in touch</h3>
           <a
-            href="mailito:brankica.kostic@gmail.com"
+            href="mailito:brankica.gosic@gmail.com"
             className="flex items-center gap-4 hover:opacity-100"
           >
             <SiGmail color="#D14836" size={28} />
-            <span>brankica.kostic@gmail.com</span>
+            <span>brankica.gosic@gmail.com</span>
           </a>
         </div>
       </div>
