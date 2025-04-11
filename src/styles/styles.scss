@@ -1,0 +1,24 @@
+@import "variables";
+
+.hex-container {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  clip-path: polygon(
+    25% 5%,
+    75% 5%,
+    100% 50%,
+    75% 95%,
+    25% 95%,
+    0% 50%
+  ); /*  heksagon */
+  /* overflow: hidden;  Uklonjeno da bi deo slike mogao da izlazi */
+  img {
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+    object-fit: cover;
+  }
+}

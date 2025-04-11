@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="px-6 md:px-20 py-16 border-t border-gray-800"
+      className="px-6 md:px-20 py-16 border-t border-gray-800 scroll-mt-24"
     >
       <div className="max-w-screen-lg mx-auto grid md:grid-cols-2 gap-10 items-center">
         {/* Left side – message and social icons */}

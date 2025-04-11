@@ -19,7 +19,7 @@ import {
 
 const Skills = () => {
   return (
-    <section id="skills" className="px-6 md:px-20 py-16 ">
+    <section id="skills" className="px-6 md:px-20 py-16 scroll-mt-24">
       <div className="max-w-screen-lg mx-auto px-6 ">
         <h2
           className="text-3xl font-semibold mb-10 border-b-4 inline-block border-green-500

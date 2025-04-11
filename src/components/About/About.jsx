@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
+import PersonImage from "../../assets/person.png";
+import styles from "./About.module.scss"; // Importing the CSS module
 
 const About = () => {
   return (
-    <section className="py-16 px-6">
+    <section id="about" className={`${styles.about} py-16 px-6 scroll-mt-24`}>
       <motion.div
         className="max-w-screen-lg mx-auto flex flex-col md:flex-row items-center gap-12"
         initial={{ opacity: 0, y: 50 }}
@@ -12,9 +14,9 @@ const About = () => {
       >
         {/* About text */}
         <div className="max-w-xl">
-          <h2 className="text-3xl font-semibold mb-6 border-b-4 inline-block border-green-500">
+          <h1 className="text-3xl font-semibold mb-6 border-b-4 inline-block border-green-500">
             About me
-          </h2>
+          </h1>
           <p className="text-gray-300 mb-4">
             I'm a front-end developer passionate about crafting clean,
             user-focused web interfaces. I enjoy working with modern JavaScript
@@ -31,15 +33,10 @@ const About = () => {
             learning, and joyful chaos.
           </p>
         </div>
-        {/* Hexagon profile image */}
-        <div className="w-60 h-60 p-1">
-          <div className="w-full h-full hexagon overflow-hidden">
-            <img
-              src="/images/brankica.jpeg"
-              alt="Profile"
-              className="object-contain w-full h-full"
-            />
-          </div>
+
+        {/* Double-wrapper: Outer = neon border, Inner = actual hex clip */}
+        <div className={styles.about__hexFrame}>
+          <img src={PersonImage} alt="Person" />
         </div>
       </motion.div>
     </section>
