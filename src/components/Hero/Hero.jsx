@@ -34,7 +34,7 @@ const Hero = () => {
         Hello, I'm Brankica{" "}
         <span className="text-green-500">&lt;Frontend Developer /&gt;</span>
       </h1>
-      <p className="text-lg md:text-xl text-neutral-700 dark:text-gray-400 mb-8">
+      <p className="text-lg md:text-xl mb-8">
         I craft clean and interactive user experiences with modern front-end
         technologies.
       </p>
@@ -45,7 +45,7 @@ const Hero = () => {
           rel="noopener noreferrer"
           className="px-6 py-2 border border-green-500 text-green-500 rounded hover:bg-green-500 hover:text-white dark:hover:text-black transition"
         >
-          View CV
+          Download CV
         </a>
       </div>
     </section>

@@ -18,3 +18,42 @@ a {
     background-color: var(--color-accent-hover);
   }
 }
+
+/* Tekst */
+.text-theme {
+  color: var(--color-text);
+}
+
+.text-muted {
+  color: var(--color-muted);
+}
+
+.text-heading {
+  color: var(--color-heading);
+}
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+.hover\:text-accent:hover {
+  color: var(--color-accent);
+}
+
+/* Pozadina */
+.bg-theme {
+  background-color: var(--color-background);
+}
+
+.bg-accent {
+  background-color: var(--color-accent);
+}
+
+.hover\:bg-accent-hover:hover {
+  background-color: var(--color-accent-hover);
+}
+
+/* Border */
+.border-theme {
+  border-color: var(--color-border);
+}

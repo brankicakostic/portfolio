@@ -17,18 +17,18 @@ const About = () => {
           <h1 className="text-3xl font-semibold mb-6 border-b-4 inline-block border-green-500">
             About me
           </h1>
-          <p className="text-gray-300 mb-4">
+          <p className="mb-4">
             I'm a front-end developer passionate about crafting clean,
             user-focused web interfaces. I enjoy working with modern JavaScript
             tools and bringing intuitive designs to life.
           </p>
-          <p className="text-gray-300 mb-4">
+          <p className="mb-4">
             With experience in React, SCSS, and performance optimization, I
             focus on creating responsive, scalable, and accessible applications.
             I believe in continuous learning and enjoy building meaningful
             digital experiences.
           </p>
-          <p className="text-gray-300">
+          <p>
             Outside of coding, I’m a full-time mom, always balancing creativity,
             learning, and joyful chaos.
           </p>

@@ -47,10 +47,7 @@ const Projects = () => {
 
         <div className="grid md:grid-cols-2 gap-10">
           {projects.map((project, index) => (
-            <div
-              key={index}
-              className="bg-zinc-900 rounded-2xl p-6 shadow-md hover:shadow-lg transition"
-            >
+            <div key={index} className="rp-6">
               {/* Project Image */}
               {project.image && (
                 <img
@@ -61,15 +58,17 @@ const Projects = () => {
               )}
 
               {/* Title */}
-              <h3 className="text-xl font-bold mb-2">{project.title}</h3>
+              <h3 className="text-xl font-semibold text-accent transition duration-300 group-hover:underline">
+                {project.title}
+              </h3>
 
               {/* Description */}
-              <p className="text-gray-300 mb-4">{project.description}</p>
+              <p className="text-theme mt-2">{project.description}</p>
 
               {/* Tech stack */}
-              <div className="flex flex-wrap gap-2 text-sm text-green-400 mb-4">
+              <div className="flex flex-wrap gap-3 mt-4 text-sm text-muted font-medium">
                 {project.tech.map((t, i) => (
-                  <span key={i} className="bg-zinc-800 px-2 py-1 rounded-md">
+                  <span key={i} className="px-2 py-1 rounded-md">
                     {t}
                   </span>
                 ))}

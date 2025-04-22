@@ -1,17 +1,23 @@
-/* About.module.scss */
-.about__hexContainer {
+.about__hexWrapper {
+  width: 220px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  width: 250px;
-  height: 250px; /* keep a square to match the hex proportions */
-  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-  overflow: hidden;
 }
 
-.about__hexContainer img {
-  /* Fill the container and center the subject */
+.about__hexImage {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 50% 50%; /* or 50% 20% if you need the face higher */
-  display: block;
+  clip-path: polygon(
+    25% 6.7%,
+    75% 6.7%,
+    100% 50%,
+    75% 93.3%,
+    25% 93.3%,
+    0% 50%
+  );
+  border: 4px solid #00ff88;
 }

@@ -5,17 +5,17 @@
   --color-heading: #fff;
   --hero-bg-color: #031e1a;
   --h1-color: #fff;
-  --color-background-light: #f0f0f0;
+  --color-background-light: #f3fdf6;
   --color-background-dark: #1a1a1a;
   --color-text-light: #1a1a1a;
   --color-text-dark: #ffffff;
-  --color-primary-light: #007bff;
+  --color-primary-light: #22c55e;
   --color-primary-dark: #0056b3;
   /* Update accent color */
   --color-accent: #22c55e;
   --color-accent-hover: rgba(34, 197, 94, 0.2);
-  --color-muted: #666666;
-  --color-border: #cccccc;
+  --color-muted: #6b7280;
+  --color-border: #d1e3d3;
 }
 
 /* Light Theme */
@@ -39,14 +39,14 @@
 
 // Define light theme map
 $theme-light: (
-  background: #ffffff,
-  text: #000000,
+  background: #f3fdf6,
+  text: #1a1a1a,
   accent: #22c55e,
   // Updated accent color
-  accent-hover: rgba(34, 197, 94, 0.2),
+  accent-hover: rgba(34, 197, 94, 0.1),
   // Updated accent hover
-  muted: #666666,
-  border: #cccccc,
+  muted: #6b7280,
+  border: #d1e3d3,
 );
 
 // Define dark theme map

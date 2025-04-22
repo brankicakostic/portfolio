@@ -30,11 +30,11 @@ export default function Navbar() {
     <a
       href={`#${id}`}
       onClick={() => setIsOpen(false)}
-      className={`block px-4 py-2 transition-colors duration-200 hover:text-green-500 ${
-        activeSection === id ? "text-green-500" : "text-neutral-400"
-      }`}
+      className={`block px-4 py-2 transition-colors duration-200 hover:text-accent ${
+        activeSection === id ? "text-accent font-semibold" : "text-muted"
+      } text-theme`}
     >
-      {activeSection === id ? `<${label} />` : label}
+      {activeSection === id ? <>&lt;{label} /&gt;</> : label}
     </a>
   );
 
@@ -42,9 +42,7 @@ export default function Navbar() {
     <nav className="fixed top-0 inset-x-0 z-50 backdrop-blur-sm border-b border-neutral-800 dark:border-neutral-700">
       <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 py-4 flex items-center justify-between">
         {/* Left side – logo ili prazno */}
-        <div className="text-green-500 font-semibold">
-          {/* <Portfolio /> */}
-        </div>
+        <div className="text-accent font-semibold">{/* <Portfolio /> */}</div>
 
         {/* Desktop nav */}
         <ul className="hidden md:flex space-x-6 text-base text-neutral-800 dark:text-neutral-300">
@@ -53,6 +51,14 @@ export default function Navbar() {
           {renderLink("projects", "Projects")}
           {renderLink("contact", "Contact")}
         </ul>
+        <a
+          href="/Brankica_Kostic_CV.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-6 py-2 border border-green-500 text-green-500 rounded hover:bg-green-500 hover:text-white dark:hover:text-black transition"
+        >
+          View CV
+        </a>
 
         {/* Mobile icon right aligned */}
         <div className="md:hidden">
